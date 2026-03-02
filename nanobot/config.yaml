@@ -1,0 +1,21 @@
+name: "Nanobot AI Assistant"
+description: "Ultra-lightweight personal AI assistant with WhatsApp/Telegram integration"
+version: "0.2.3"
+slug: "nanobot"
+url: "https://github.com/HKUDS/nanobot"
+arch:
+  - aarch64
+  - amd64
+init: false
+stdin: true
+homeassistant_api: true
+host_network: true
+ports:
+  18790/tcp: 18790
+ports_description:
+  18790/tcp: "Nanobot Gateway"
+map:
+  - config:rw
+  - share:rw
+options: {}
+schema: {}

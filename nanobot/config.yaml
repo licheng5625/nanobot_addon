@@ -1,6 +1,6 @@
 name: "Nanobot AI Assistant"
 description: "Ultra-lightweight personal AI assistant with WhatsApp/Telegram integration"
-version: "0.2.4"
+version: "0.2.5"
 slug: "nanobot"
 url: "https://github.com/HKUDS/nanobot"
 arch:

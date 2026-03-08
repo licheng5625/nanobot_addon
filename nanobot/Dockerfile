@@ -24,11 +24,9 @@ RUN pip install --no-cache-dir uv
 # Install playwright and browsers
 RUN uv pip install playwright && playwright install --with-deps chromium
 
-# Clone nanobot
-RUN git init . \
-    && git remote add origin https://github.com/HKUDS/nanobot.git \
-    && git fetch --depth 1 origin 1303cc66690fd9597c6a5e13022f692dbb6a85a1 \
-    && git checkout FETCH_HEAD \
+# Clone nanobot from licheng5625 fork with homeassistant channel
+RUN git clone --depth 1 --branch feature/homeassistant-channel \
+    https://github.com/licheng5625/nanobot.git . \
     && rm -rf .git
     
 # Install nanobot in venv

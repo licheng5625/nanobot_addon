@@ -33,6 +33,9 @@ if [ ! -f "$CONFIG_DIR/config.json" ]; then
     }
   },
   "channels": {
+    "homeassistant": {
+      "enabled": false
+    },
     "telegram": { "enabled": false },
     "whatsapp": { "enabled": false }
   },

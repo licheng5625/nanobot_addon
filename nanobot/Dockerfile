@@ -26,10 +26,10 @@ RUN uv pip install playwright && playwright install --with-deps chromium
 
 RUN git init \
     && git remote add origin https://github.com/licheng5625/nanobot.git \
-    && git fetch --depth 1 origin a48d8af69b73f69bd6afc1619dac176f0bab3ef2 \
+    && git fetch --depth 1 origin 8ff44708bfabb274c481f11141e485c7ba30fa79 \
     && git checkout FETCH_HEAD \
     && rm -rf .git
-    
+
 # Install nanobot in venv
 RUN uv pip install --no-cache .
 

@@ -33,9 +33,7 @@ RUN git init \
 # Install nanobot in venv
 RUN uv pip install --no-cache .
 
-# Build WhatsApp bridge
-WORKDIR /app/bridge
-RUN npm install && npm run build
+RUN uv pip install nanobot-ai[discord]
 WORKDIR /app
 
 # Create config directory

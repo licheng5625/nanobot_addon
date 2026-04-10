@@ -26,7 +26,7 @@ RUN uv pip install playwright && playwright install --with-deps chromium
 
 RUN git init \
     && git remote add origin https://github.com/licheng5625/nanobot.git \
-    && git fetch --depth 1 origin dd710ecee9954aa35f8af8d215e826b609f97d24 \
+    && git fetch --depth 1 origin 9bccfa63d2ad4416411913752b6948c0cfc3b3d0 \
     && git checkout FETCH_HEAD \
     && rm -rf .git
 

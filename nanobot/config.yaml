@@ -1,6 +1,6 @@
 name: "Nanobot AI Assistant"
 description: "Ultra-lightweight personal AI assistant with Home Assistant conversation support"
-version: "0.5.2"
+version: "0.5.3"
 slug: "nanobot"
 url: "https://github.com/licheng5625/nanobot"
 arch:
